@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                                         JSONObject pokemon = jsonArray.getJSONObject(i);
 
                                         String Name = pokemon.getString("name");
-                                        float height = pokemon.getInt("height");
-                                        float Weight = pokemon.getInt("weight");
+                                        String height = pokemon.getString("height");
+                                       String Weight = pokemon.getString("weight");
 
                                         txt.append(Name + ", " + String.valueOf(height) + ", " + String.valueOf(Weight) + "\n\n");
                                     }
